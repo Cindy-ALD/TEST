@@ -1,0 +1,1890 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style type="text/css">
+  .elq-form .elq-required{
+	color:red!important;
+	display:inline;
+	float:none;
+	font-weight:700;
+	margin:0;
+	padding:0}
+	.elq-form #elq-FormLastRow{
+	position:absolute;
+	left:-80%;
+	top:-80%}
+  .elq-form .elq-label{
+   display: inline-block;
+	max-width: 100%;
+	font-weight: 600;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: Source Sans Pro;
+	margin-bottom: 5px;
+	color: #050B7F;}
+  .elq-form .elq-label-top{
+	padding-bottom:3px}
+  .elq-form .elq-item-label{
+	max-width: 100%;
+	box-sizing: border-box;
+	color: #050B7F;
+	font-family: Source Sans Pro;
+	font-size: 16px;}
+  .elq-form .list-order{
+	margin-left:0;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis}
+	.elq-form .list-order input[type=radio] {
+	margin-left: 1px;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #0BCBFB;
+	transition: 0.2s all linear;
+	margin-right: 5px;
+	position: relative;
+	top: 4px;
+	appearance: none;
+}
+.elq-form .list-order input:checked[type=radio] {
+	border: 6px solid #0BCBFB;
+}
+  .elq-form .one-column{
+	width:100%;
+	clear:both}
+  .elq-form .two-column{
+	float:left;
+	width:38%}
+  .elq-form .three-column{
+	float:left;
+	width:30%}
+  .elq-form .elq-item-textarea{
+	resize:vertical;
+	min-height:48px;
+	max-height:360px;
+	box-sizing:border-box}
+  .elq-form .elq-item-input,.elq-form .elq-item-select,.elq-form .elq-item-textarea{
+	font-family:inherit;
+	font-size:inherit;
+	line-height:inherit;
+	color:inherit;
+	font:inherit;
+	margin:0}
+  .elq-form .elq-item-select{
+	text-transform:none}
+  .elq-form .row.single-checkbox-row{
+	margin-left:0}
+  .elq-form .elq-field-style{
+	padding-bottom:10px}
+  .elq-form .elq-field-style input[type=submit]{
+	-webkit-appearance:square-button}
+  @-webkit-keyframes spin{
+	0%{
+	  -webkit-transform:rotate(0deg)}
+	to{
+	  -webkit-transform:rotate(1turn)}
+  }
+  @keyframes spin{
+	0%{
+	  transform:rotate(0deg)}
+	to{
+	  transform:rotate(1turn)}
+  }
+  .elq-form .loader{
+	vertical-align:middle;
+	display:inline-block;
+	margin-left:10px;
+	border:3px solid #f3f3f3;
+	border-radius:50%;
+	border-top:3px solid #3498db;
+	width:20px;
+	height:20px;
+	-webkit-animation:spin 2s linear infinite;
+	animation:spin 2s linear infinite}
+  .elq-form input[type=checkbox],.elq-form input[type=radio]{
+	margin:0}
+  .elq-form *,.elq-form :after,.elq-form :before{
+	box-sizing:border-box}
+  .elq-form html{
+	font-size:10px;
+	-webkit-tap-highlight-color:transparent}
+  .elq-form body{
+	font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size:16px;
+	line-height:1.42857;
+	color:#333;
+	background-color:#fff}
+  .elq-form button,.elq-form input,.elq-form select,.elq-form textarea{
+	font-family:inherit;
+	font-size:inherit;
+	line-height:inherit}
+  .elq-form a{
+	color:#337ab7;
+	text-decoration:none}
+  .elq-form a:focus,.elq-form a:hover{
+	color:#23527c;
+	text-decoration:underline}
+  .elq-form a:focus{
+	outline:5px auto -webkit-focus-ring-color;
+	outline-offset:-2px}
+  .elq-form figure{
+	margin:0}
+  .elq-form img{
+	vertical-align:middle}
+  .elq-form .img-responsive{
+	display:block;
+	max-width:100%;
+	height:auto}
+  .elq-form .img-rounded{
+	border-radius:6px}
+  .elq-form .img-thumbnail{
+	padding:4px;
+	line-height:1.42857;
+	background-color:#fff;
+	border:1px solid #ddd;
+	border-radius:4px;
+	transition:all .2s ease-in-out;
+	display:inline-block;
+	max-width:100%;
+	height:auto}
+  .elq-form .img-circle{
+	border-radius:50%}
+  .elq-form hr{
+	margin-top:20px;
+	margin-bottom:20px;
+	border:0;
+	border-top:1px solid #eee}
+  .elq-form .sr-only{
+	position:absolute;
+	width:1px;
+	height:1px;
+	margin:-1px;
+	padding:0;
+	overflow:hidden;
+	clip:rect(0,0,0,0);
+	border:0}
+  .elq-form .sr-only-focusable:active,.elq-form .sr-only-focusable:focus{
+	position:static;
+	width:auto;
+	height:auto;
+	margin:0;
+	overflow:visible;
+	clip:auto}
+  .elq-form [role=button]{
+	cursor:pointer}
+  .elq-form .container{
+	margin-right:auto;
+	margin-left:auto;
+	padding-left:5px;
+	padding-right:5px}
+  .elq-form .container:after,.elq-form .container:before{
+	content:" ";
+	display:table}
+  .elq-form .container:after{
+	clear:both}
+  @media (min-width:768px){
+	.elq-form .container{
+	  width:750px}
+  }
+  @media (min-width:992px){
+	.elq-form .container{
+	  width:970px}
+  }
+  @media (min-width:1200px){
+	.elq-form .container{
+	  width:1170px}
+  }
+  .elq-form .container-fluid{
+	margin-right:auto;
+	margin-left:auto;
+	padding-left:5px;
+	padding-right:5px}
+  .elq-form .container-fluid:after,.elq-form .container-fluid:before{
+	content:" ";
+	display:table}
+  .elq-form .container-fluid:after{
+	clear:both}
+  .elq-form .row{
+	margin-left:-15px;
+	margin-right:-15px}
+  .elq-form .row:after,.elq-form .row:before{
+	content:" ";
+	display:table}
+  .elq-form .row:after{
+	clear:both}
+  .elq-form .col-lg-1,.elq-form .col-lg-2,.elq-form .col-lg-3,.elq-form .col-lg-4,.elq-form .col-lg-5,.elq-form .col-lg-6,.elq-form .col-lg-7,.elq-form .col-lg-8,.elq-form .col-lg-9,.elq-form .col-lg-10,.elq-form .col-lg-11,.elq-form .col-lg-12,.elq-form .col-md-1,.elq-form .col-md-2,.elq-form .col-md-3,.elq-form .col-md-4,.elq-form .col-md-5,.elq-form .col-md-6,.elq-form .col-md-7,.elq-form .col-md-8,.elq-form .col-md-9,.elq-form .col-md-10,.elq-form .col-md-11,.elq-form .col-md-12,.elq-form .col-sm-1,.elq-form .col-sm-2,.elq-form .col-sm-3,.elq-form .col-sm-4,.elq-form .col-sm-5,.elq-form .col-sm-6,.elq-form .col-sm-7,.elq-form .col-sm-8,.elq-form .col-sm-9,.elq-form .col-sm-10,.elq-form .col-sm-11,.elq-form .col-sm-12,.elq-form .col-xs-1,.elq-form .col-xs-2,.elq-form .col-xs-3,.elq-form .col-xs-4,.elq-form .col-xs-5,.elq-form .col-xs-6,.elq-form .col-xs-7,.elq-form .col-xs-8,.elq-form .col-xs-9,.elq-form .col-xs-10,.elq-form .col-xs-11,.elq-form .col-xs-12{
+	position:relative;
+	min-height:1px;
+	padding-left:5px;
+	padding-right:5px}
+  .elq-form .col-xs-1,.elq-form .col-xs-2,.elq-form .col-xs-3,.elq-form .col-xs-4,.elq-form .col-xs-5,.elq-form .col-xs-6,.elq-form .col-xs-7,.elq-form .col-xs-8,.elq-form .col-xs-9,.elq-form .col-xs-10,.elq-form .col-xs-11,.elq-form .col-xs-12{
+	float:left}
+  .elq-form .col-xs-1{
+	width:8.33333%}
+  .elq-form .col-xs-2{
+	width:16.66667%}
+  .elq-form .col-xs-3{
+	width:25%}
+  .elq-form .col-xs-4{
+	width:33.33333%}
+  .elq-form .col-xs-5{
+	width:41.66667%}
+  .elq-form .col-xs-6{
+	width:50%}
+  .elq-form .col-xs-7{
+	width:58.33333%}
+  .elq-form .col-xs-8{
+	width:66.66667%}
+  .elq-form .col-xs-9{
+	width:75%}
+  .elq-form .col-xs-10{
+	width:83.33333%}
+  .elq-form .col-xs-11{
+	width:91.66667%}
+  .elq-form .col-xs-12{
+	width:100%}
+  .elq-form .col-xs-pull-0{
+	right:auto}
+  .elq-form .col-xs-pull-1{
+	right:8.33333%}
+  .elq-form .col-xs-pull-2{
+	right:16.66667%}
+  .elq-form .col-xs-pull-3{
+	right:25%}
+  .elq-form .col-xs-pull-4{
+	right:33.33333%}
+  .elq-form .col-xs-pull-5{
+	right:41.66667%}
+  .elq-form .col-xs-pull-6{
+	right:50%}
+  .elq-form .col-xs-pull-7{
+	right:58.33333%}
+  .elq-form .col-xs-pull-8{
+	right:66.66667%}
+  .elq-form .col-xs-pull-9{
+	right:75%}
+  .elq-form .col-xs-pull-10{
+	right:83.33333%}
+  .elq-form .col-xs-pull-11{
+	right:91.66667%}
+  .elq-form .col-xs-pull-12{
+	right:100%}
+  .elq-form .col-xs-push-0{
+	left:auto}
+  .elq-form .col-xs-push-1{
+	left:8.33333%}
+  .elq-form .col-xs-push-2{
+	left:16.66667%}
+  .elq-form .col-xs-push-3{
+	left:25%}
+  .elq-form .col-xs-push-4{
+	left:33.33333%}
+  .elq-form .col-xs-push-5{
+	left:41.66667%}
+  .elq-form .col-xs-push-6{
+	left:50%}
+  .elq-form .col-xs-push-7{
+	left:58.33333%}
+  .elq-form .col-xs-push-8{
+	left:66.66667%}
+  .elq-form .col-xs-push-9{
+	left:75%}
+  .elq-form .col-xs-push-10{
+	left:83.33333%}
+  .elq-form .col-xs-push-11{
+	left:91.66667%}
+  .elq-form .col-xs-push-12{
+	left:100%}
+  .elq-form .col-xs-offset-0{
+	margin-left:0}
+  .elq-form .col-xs-offset-1{
+	margin-left:8.33333%}
+  .elq-form .col-xs-offset-2{
+	margin-left:16.66667%}
+  .elq-form .col-xs-offset-3{
+	margin-left:25%}
+  .elq-form .col-xs-offset-4{
+	margin-left:33.33333%}
+  .elq-form .col-xs-offset-5{
+	margin-left:41.66667%}
+  .elq-form .col-xs-offset-6{
+	margin-left:50%}
+  .elq-form .col-xs-offset-7{
+	margin-left:58.33333%}
+  .elq-form .col-xs-offset-8{
+	margin-left:66.66667%}
+  .elq-form .col-xs-offset-9{
+	margin-left:75%}
+  .elq-form .col-xs-offset-10{
+	margin-left:83.33333%}
+  .elq-form .col-xs-offset-11{
+	margin-left:91.66667%}
+  .elq-form .col-xs-offset-12{
+	margin-left:100%}
+  @media (min-width:768px){
+	.elq-form .col-sm-1,.elq-form .col-sm-2,.elq-form .col-sm-3,.elq-form .col-sm-4,.elq-form .col-sm-5,.elq-form .col-sm-6,.elq-form .col-sm-7,.elq-form .col-sm-8,.elq-form .col-sm-9,.elq-form .col-sm-10,.elq-form .col-sm-11,.elq-form .col-sm-12{
+	  float:left}
+	.elq-form .col-sm-1{
+	  width:8.33333%}
+	.elq-form .col-sm-2{
+	  width:16.66667%}
+	.elq-form .col-sm-3{
+	  width:25%}
+	.elq-form .col-sm-4{
+	  width:33.33333%}
+	.elq-form .col-sm-5{
+	  width:41.66667%}
+	.elq-form .col-sm-6{
+	  width:50%}
+	.elq-form .col-sm-7{
+	  width:58.33333%}
+	.elq-form .col-sm-8{
+	  width:66.66667%}
+	.elq-form .col-sm-9{
+	  width:75%}
+	.elq-form .col-sm-10{
+	  width:83.33333%}
+	.elq-form .col-sm-11{
+	  width:91.66667%}
+	.elq-form .col-sm-12{
+	  width:100%}
+	.elq-form .col-sm-pull-0{
+	  right:auto}
+	.elq-form .col-sm-pull-1{
+	  right:8.33333%}
+	.elq-form .col-sm-pull-2{
+	  right:16.66667%}
+	.elq-form .col-sm-pull-3{
+	  right:25%}
+	.elq-form .col-sm-pull-4{
+	  right:33.33333%}
+	.elq-form .col-sm-pull-5{
+	  right:41.66667%}
+	.elq-form .col-sm-pull-6{
+	  right:50%}
+	.elq-form .col-sm-pull-7{
+	  right:58.33333%}
+	.elq-form .col-sm-pull-8{
+	  right:66.66667%}
+	.elq-form .col-sm-pull-9{
+	  right:75%}
+	.elq-form .col-sm-pull-10{
+	  right:83.33333%}
+	.elq-form .col-sm-pull-11{
+	  right:91.66667%}
+	.elq-form .col-sm-pull-12{
+	  right:100%}
+	.elq-form .col-sm-push-0{
+	  left:auto}
+	.elq-form .col-sm-push-1{
+	  left:8.33333%}
+	.elq-form .col-sm-push-2{
+	  left:16.66667%}
+	.elq-form .col-sm-push-3{
+	  left:25%}
+	.elq-form .col-sm-push-4{
+	  left:33.33333%}
+	.elq-form .col-sm-push-5{
+	  left:41.66667%}
+	.elq-form .col-sm-push-6{
+	  left:50%}
+	.elq-form .col-sm-push-7{
+	  left:58.33333%}
+	.elq-form .col-sm-push-8{
+	  left:66.66667%}
+	.elq-form .col-sm-push-9{
+	  left:75%}
+	.elq-form .col-sm-push-10{
+	  left:83.33333%}
+	.elq-form .col-sm-push-11{
+	  left:91.66667%}
+	.elq-form .col-sm-push-12{
+	  left:100%}
+	.elq-form .col-sm-offset-0{
+	  margin-left:0}
+	.elq-form .col-sm-offset-1{
+	  margin-left:8.33333%}
+	.elq-form .col-sm-offset-2{
+	  margin-left:16.66667%}
+	.elq-form .col-sm-offset-3{
+	  margin-left:25%}
+	.elq-form .col-sm-offset-4{
+	  margin-left:33.33333%}
+	.elq-form .col-sm-offset-5{
+	  margin-left:41.66667%}
+	.elq-form .col-sm-offset-6{
+	  margin-left:50%}
+	.elq-form .col-sm-offset-7{
+	  margin-left:58.33333%}
+	.elq-form .col-sm-offset-8{
+	  margin-left:66.66667%}
+	.elq-form .col-sm-offset-9{
+	  margin-left:75%}
+	.elq-form .col-sm-offset-10{
+	  margin-left:83.33333%}
+	.elq-form .col-sm-offset-11{
+	  margin-left:91.66667%}
+	.elq-form .col-sm-offset-12{
+	  margin-left:100%}
+  }
+  @media (min-width:992px){
+	.elq-form .col-md-1,.elq-form .col-md-2,.elq-form .col-md-3,.elq-form .col-md-4,.elq-form .col-md-5,.elq-form .col-md-6,.elq-form .col-md-7,.elq-form .col-md-8,.elq-form .col-md-9,.elq-form .col-md-10,.elq-form .col-md-11,.elq-form .col-md-12{
+	  float:left}
+	.elq-form .col-md-1{
+	  width:8.33333%}
+	.elq-form .col-md-2{
+	  width:16.66667%}
+	.elq-form .col-md-3{
+	  width:25%}
+	.elq-form .col-md-4{
+	  width:33.33333%}
+	.elq-form .col-md-5{
+	  width:41.66667%}
+	.elq-form .col-md-6{
+	  width:50%}
+	.elq-form .col-md-7{
+	  width:58.33333%}
+	.elq-form .col-md-8{
+	  width:66.66667%}
+	.elq-form .col-md-9{
+	  width:75%}
+	.elq-form .col-md-10{
+	  width:83.33333%}
+	.elq-form .col-md-11{
+	  width:91.66667%}
+	.elq-form .col-md-12{
+	  width:100%}
+	.elq-form .col-md-pull-0{
+	  right:auto}
+	.elq-form .col-md-pull-1{
+	  right:8.33333%}
+	.elq-form .col-md-pull-2{
+	  right:16.66667%}
+	.elq-form .col-md-pull-3{
+	  right:25%}
+	.elq-form .col-md-pull-4{
+	  right:33.33333%}
+	.elq-form .col-md-pull-5{
+	  right:41.66667%}
+	.elq-form .col-md-pull-6{
+	  right:50%}
+	.elq-form .col-md-pull-7{
+	  right:58.33333%}
+	.elq-form .col-md-pull-8{
+	  right:66.66667%}
+	.elq-form .col-md-pull-9{
+	  right:75%}
+	.elq-form .col-md-pull-10{
+	  right:83.33333%}
+	.elq-form .col-md-pull-11{
+	  right:91.66667%}
+	.elq-form .col-md-pull-12{
+	  right:100%}
+	.elq-form .col-md-push-0{
+	  left:auto}
+	.elq-form .col-md-push-1{
+	  left:8.33333%}
+	.elq-form .col-md-push-2{
+	  left:16.66667%}
+	.elq-form .col-md-push-3{
+	  left:25%}
+	.elq-form .col-md-push-4{
+	  left:33.33333%}
+	.elq-form .col-md-push-5{
+	  left:41.66667%}
+	.elq-form .col-md-push-6{
+	  left:50%}
+	.elq-form .col-md-push-7{
+	  left:58.33333%}
+	.elq-form .col-md-push-8{
+	  left:66.66667%}
+	.elq-form .col-md-push-9{
+	  left:75%}
+	.elq-form .col-md-push-10{
+	  left:83.33333%}
+	.elq-form .col-md-push-11{
+	  left:91.66667%}
+	.elq-form .col-md-push-12{
+	  left:100%}
+	.elq-form .col-md-offset-0{
+	  margin-left:0}
+	.elq-form .col-md-offset-1{
+	  margin-left:8.33333%}
+	.elq-form .col-md-offset-2{
+	  margin-left:16.66667%}
+	.elq-form .col-md-offset-3{
+	  margin-left:25%}
+	.elq-form .col-md-offset-4{
+	  margin-left:33.33333%}
+	.elq-form .col-md-offset-5{
+	  margin-left:41.66667%}
+	.elq-form .col-md-offset-6{
+	  margin-left:50%}
+	.elq-form .col-md-offset-7{
+	  margin-left:58.33333%}
+	.elq-form .col-md-offset-8{
+	  margin-left:66.66667%}
+	.elq-form .col-md-offset-9{
+	  margin-left:75%}
+	.elq-form .col-md-offset-10{
+	  margin-left:83.33333%}
+	.elq-form .col-md-offset-11{
+	  margin-left:91.66667%}
+	.elq-form .col-md-offset-12{
+	  margin-left:100%}
+  }
+  @media (min-width:1200px){
+	.elq-form .col-lg-1,.elq-form .col-lg-2,.elq-form .col-lg-3,.elq-form .col-lg-4,.elq-form .col-lg-5,.elq-form .col-lg-6,.elq-form .col-lg-7,.elq-form .col-lg-8,.elq-form .col-lg-9,.elq-form .col-lg-10,.elq-form .col-lg-11,.elq-form .col-lg-12{
+	  float:left}
+	.elq-form .col-lg-1{
+	  width:8.33333%}
+	.elq-form .col-lg-2{
+	  width:16.66667%}
+	.elq-form .col-lg-3{
+	  width:25%}
+	.elq-form .col-lg-4{
+	  width:33.33333%}
+	.elq-form .col-lg-5{
+	  width:41.66667%}
+	.elq-form .col-lg-6{
+	  width:50%}
+	.elq-form .col-lg-7{
+	  width:58.33333%}
+	.elq-form .col-lg-8{
+	  width:66.66667%}
+	.elq-form .col-lg-9{
+	  width:75%}
+	.elq-form .col-lg-10{
+	  width:83.33333%}
+	.elq-form .col-lg-11{
+	  width:91.66667%}
+	.elq-form .col-lg-12{
+	  width:100%}
+	.elq-form .col-lg-pull-0{
+	  right:auto}
+	.elq-form .col-lg-pull-1{
+	  right:8.33333%}
+	.elq-form .col-lg-pull-2{
+	  right:16.66667%}
+	.elq-form .col-lg-pull-3{
+	  right:25%}
+	.elq-form .col-lg-pull-4{
+	  right:33.33333%}
+	.elq-form .col-lg-pull-5{
+	  right:41.66667%}
+	.elq-form .col-lg-pull-6{
+	  right:50%}
+	.elq-form .col-lg-pull-7{
+	  right:58.33333%}
+	.elq-form .col-lg-pull-8{
+	  right:66.66667%}
+	.elq-form .col-lg-pull-9{
+	  right:75%}
+	.elq-form .col-lg-pull-10{
+	  right:83.33333%}
+	.elq-form .col-lg-pull-11{
+	  right:91.66667%}
+	.elq-form .col-lg-pull-12{
+	  right:100%}
+	.elq-form .col-lg-push-0{
+	  left:auto}
+	.elq-form .col-lg-push-1{
+	  left:8.33333%}
+	.elq-form .col-lg-push-2{
+	  left:16.66667%}
+	.elq-form .col-lg-push-3{
+	  left:25%}
+	.elq-form .col-lg-push-4{
+	  left:33.33333%}
+	.elq-form .col-lg-push-5{
+	  left:41.66667%}
+	.elq-form .col-lg-push-6{
+	  left:50%}
+	.elq-form .col-lg-push-7{
+	  left:58.33333%}
+	.elq-form .col-lg-push-8{
+	  left:66.66667%}
+	.elq-form .col-lg-push-9{
+	  left:75%}
+	.elq-form .col-lg-push-10{
+	  left:83.33333%}
+	.elq-form .col-lg-push-11{
+	  left:91.66667%}
+	.elq-form .col-lg-push-12{
+	  left:100%}
+	.elq-form .col-lg-offset-0{
+	  margin-left:0}
+	.elq-form .col-lg-offset-1{
+	  margin-left:8.33333%}
+	.elq-form .col-lg-offset-2{
+	  margin-left:16.66667%}
+	.elq-form .col-lg-offset-3{
+	  margin-left:25%}
+	.elq-form .col-lg-offset-4{
+	  margin-left:33.33333%}
+	.elq-form .col-lg-offset-5{
+	  margin-left:41.66667%}
+	.elq-form .col-lg-offset-6{
+	  margin-left:50%}
+	.elq-form .col-lg-offset-7{
+	  margin-left:58.33333%}
+	.elq-form .col-lg-offset-8{
+	  margin-left:66.66667%}
+	.elq-form .col-lg-offset-9{
+	  margin-left:75%}
+	.elq-form .col-lg-offset-10{
+	  margin-left:83.33333%}
+	.elq-form .col-lg-offset-11{
+	  margin-left:91.66667%}
+	.elq-form .col-lg-offset-12{
+	  margin-left:100%}
+  }
+  .elq-form .row{
+	display:inherit}
+  .LV_invalid_field,input.LV_invalid_field:active,input.LV_invalid_field:hover,textarea.LV_invalid_field:active,textarea.LV_invalid_field:hover{
+	outline:1px solid #c00}
+  .LV_validation_message{
+	font-weight:700;
+	margin:0 0 0 5px}
+  .LV_valid{
+	display:none}
+  .LV_invalid{
+	color:#c00;
+	font-size:10px}
+  .submit-button-style{
+		background-color: #050B7F;
+		border-radius : 22.5px;
+		color: white;
+		height:45px;
+		padding-left: 27px;
+		padding-right: 27px;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 45px;
+		text-decoration: none;
+		display: inline-blocK;
+	  margin:auto;
+		font-size: 18px;
+		cursor: pointer;
+		font-family : Source Sans Pro;
+		font-weight: 600;
+		border-color : white;
+		border: 2px solid;}
+  .checkbox-aligned{
+	margin-left:5px;
+	display:inline}
+  .form-element-layout{
+	padding:5px 10px}
+  .form-element-instruction{
+	font-size:10px}
+  .form-element-form-text{
+	margin:0}
+  .form-field-visible-xs-block{
+	display:none}
+  @media (max-width:767px){
+	.form-field-visible-xs-block{
+	  display:block}
+  }
+  .form-field-hidden-xs{
+	display:block}
+  @media (max-width:767px){
+	.form-field-hidden-xs{
+	  display:none}
+  }
+  form{
+  color: #050B7F;
+  font-size:16px;
+  font-family: 'Source sans Pro';
+}
+
+input[type='text']{
+  border: none;
+  border-bottom: 1px solid #050B7F;
+
+}
+
+label{
+	font-weight:bold!important;
+}
+
+ @media only screen and (max-width:480px) {
+	 h1{
+line-height: 1.5em!important;  
+margin-left: 0!important;  
+text-align: center; }
+
+
+}
+
+.range-km,
+.range-duree {position:relative;}
+.disable-option {position:absolute;top:0;left:0;width:100%;bottom:0;z-index:2;cursor: pointer;}
+
+</style>
+
+	<div class="form-step1">
+		<h3>Choisissez et configurez votre véhicule pour voir le loyer :</h3>
+		<div class="wrapper-cars">
+			<select required class="cars-select" name="cars" id="cars">
+				<option value="" selected="selected" disabled="disabled">Sélectionnez le véhicule souhaité</option>
+				<option name="modele" value="Skoda Fabia">Škoda Fabia Active</option>
+				<option name="modele" value="Skoda Kamiq">Škoda Kamiq Ambition</option>
+				<option name="modele" value="Skoda Enyaq">Škoda Enyaq iV 60</option>
+				<option name="modele" value="Autre" >Autre véhicule</option>
+			</select>
+			<div class="cars-info modeleA">
+				 
+					<div class="cars-info_left">
+						  <p class="cars-info_ch"></p>
+						  <p class="cars-info_price">À partir de <span class="cars-price semi-bold">231€</span> par mois<sup>(4)</sup></p><br>
+						  <p class="cars-info_desc">Sans apport ni premier loyer majoré<br><span class="semi-bold">Maintenance tous réseaux &#x26; Assistance 24/7 incluse</span></p></div>
+					<div class="cars-info_right">
+						  <img src="https://images.ald.aldautomotive.com/EloquaImages/clients/ALDInternational/%7B56441422-4fc9-4496-90d1-43b7ed0e1200%7D_Skoda_Fabia_1.png" alt="SKODA FABIA" />
+					</div>
+				</div>
+				
+			<div class="cars-info modeleB">
+					<div class="cars-info_left">
+						<p class="cars-info_ch"></p>
+						<p class="cars-info_price">À partir de <span class="cars-price semi-bold">279€</span> par mois<sup>(4)</sup></p><br>
+						<p class="cars-info_desc">Sans apport ni premier loyer majoré<br><span class="semi-bold">Maintenance tous réseaux &#x26; Assistance 24/7 incluse</span></p>
+					</div>
+
+					<div class="cars-info_right">
+						<img src="https://images.ald.aldautomotive.com/EloquaImages/clients/ALDInternational/%7B993c64de-9498-4771-acf5-3dd8da59e8cc%7D_Skoda_Kamiq_1.png" alt="SKODA KAMIQ" />
+					</div>										
+			</div>
+
+			<div class="cars-info modeleC">
+				<div class="cars-info_left">
+						<p class="cars-info_ch"></p>
+						<p class="cars-info_price">À partir de <span class="cars-price semi-bold">483€</span> par mois<sup>(4)</sup></p><br>
+						<p class="cars-info_desc">Premier loyer de 3000€ revenant à 0€ après déduction du bonus écologique de 3000€<br><span class="semi-bold">Maintenance tous réseaux &#x26; Assistance 24/7 incluse</span></p>
+					</div>
+					<div class="cars-info_right">
+						<img src="https://images.ald.aldautomotive.com/EloquaImages/clients/ALDInternational/%7B7c5a1b68-21e7-4cda-bc1c-f6f69ee7a3a6%7D_Skoda_Enyaq_iV_60_1.png" alt="SKODA ENYAQ" />
+					</div>
+			</div> 
+	
+			<div class="cars-info modeleD">
+				<div class="cars-info_left">
+						<p class="cars-info_ch"></p>
+						<p class="cars-info_price">Vous préférez un autre véhicule ou une autre finition : </p><br>
+						<p class="cars-info_desc">Pour obtenir une offre pour un autre véhicule ou une autre finition, choisissez une durée, un kilométrage et remplissez le formulaire. Un expert Location Longue Durée ALD Automotive vous recontactera. </p>
+					</div>
+					<div class="cars-info_right"></div>
+				</div>
+		</div>
+	<!-- Jauge km -->
+	<div class="range-km">
+	  <h4>Kilométrage annuel</h4>
+	  <div class="wrapper jauge">
+		<div class="lines">
+		  <div class="line"></div>
+		  <div class="line-option">
+			<label class="line-option_sublabel">10 000 km/an</label>
+			<div class="line-option_selector" value="10000 km"></div>
+			<label class="line-option_label">10 000</label>
+		  </div>
+		  <div class="line-option">
+			<label class="line-option_sublabel">15 000 km/an</label>
+			<div class="line-option_selector" value="15000 km"></div>
+			<label class="line-option_label">15 000</label>
+		  </div>
+		  <div class="line-option">
+			<label class="line-option_sublabel">20 000 km/an</label>
+			<div class="line-option_selector" value="20000 km"></div>
+			<label class="line-option_label">20 000</label>
+		  </div>
+		  <div class="line-option">
+			<label class="line-option_sublabel">25 000 km/an</label>
+			<div class="line-option_selector" value="25000 km"></div>
+			<label class="line-option_label">25 000</label>
+		  </div>
+		</div>
+		<div class="line-active">
+		  <div class="line-active_line"></div>
+		  <div class="line-active_dot"></div>
+		</div>
+	  </div>
+	</div>
+	<!-- Jauge duree -->
+	<div class="range-duree">
+	  <h4>Durée</h4>
+	  <div class="wrapper jauge">
+		<div class="lines">
+		  <div class="line"></div>
+		  <div class="line-option">
+			<label class="line-option_sublabel">3 ans</label>
+			<div class="line-option_selector" value="3 ans"></div>
+			<label class="line-option_label">3 ans</label>
+		  </div>
+		  <div class="line-option">
+			<label class="line-option_sublabel">4 ans</label>
+			<div class="line-option_selector" value="4 ans"></div>
+			<label class="line-option_label">4 ans</label>
+		  </div>
+		  <div class="line-option">
+			<label class="line-option_sublabel">5 ans</label>
+			<div class="line-option_selector" value="5 ans"></div>
+			<label class="line-option_label">5 ans</label>
+		  </div>
+		</div>
+
+		<div class="line-active">
+		  <div class="line-active_line"></div>
+		  <div class="line-active_dot"></div>
+		</div>
+	  </div>
+	</div>
+
+	<center><button class="quote-button">JE DEMANDE UN DEVIS</button></center>
+  </div>
+
+<form method="post" name="740617826120-637236588120671470-637267743957306523"
+	action="https://app.ald.aldautomotive.com/e/f2" onsubmit="return handleFormSubmit(this)" id="form704"
+	class="elq-form">
+	<input value="740617826120-637236588120671470-637267743957306523" type="hidden" name="elqFormName" />
+	<input value="1109391453" type="hidden" name="elqSiteId" />
+	<input name="elqCampaignId" type="hidden" />
+	<div class="layout container-fluid">
+	  <h3>Renseignez vos informations pour recevoir un devis personnalisé</h3>
+	  <div class="row">
+		<div class="grid-layout-col">
+		  <div class="layout-col col-sm-12 col-xs-12">
+			<div id="formElement0" class="elq-field-style form-element-layout row">
+			  <div style="text-align: left" class="col-sm-12 col-xs-12">
+				<label class="elq-label" for="fe7460">Civilité
+				  <span class="elq-required">*</span>
+				</label>
+			  </div>
+			  <div class="col-sm-12 col-xs-12">
+				<div class="row">
+				  <div class="col-xs-12">
+					<div class="field-control-wrapper" id="fe7460">
+					  <div class="list-order two-column">
+						<input type="radio" id="radio-MME_wuu4hm2" value="MME" name="radioButtons" required />
+						<label class="checkbox-aligned elq-item-label" for="radio-MME_wuu4hm2">Madame
+						</label>
+						<br />
+					  </div>
+					  <div class="list-order two-column">
+						<input type="radio" id="radio-MR_dknxhw7" value="MR" name="radioButtons" />
+						<label class="checkbox-aligned elq-item-label" for="radio-MR_dknxhw7" required>Monsieur
+						</label>
+						<br />
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="grid-layout-col">
+		  <div class="layout-col col-sm-12 col-xs-12">
+			<div id="formElement1" class="elq-field-style form-element-layout row">
+			  <div style="text-align: left" class="col-sm-12 col-xs-12">
+				<label class="elq-label" for="fe7461">Prénom
+				  <span class="elq-required">* </span>
+				</label>
+			  </div>
+			  <div class="col-sm-12 col-xs-12">
+				<div class="row">
+				  <div class="col-xs-12">
+					<div class="field-control-wrapper">
+					  <input type="text" class="elq-item-input" name="FRAPrenom" id="fe7461"
+						value="~~eloqua..type--emailfield..syntax--FRA_PrEnom1~~" style="width: 100%" required />
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="grid-layout-col">
+		  <div class="layout-col col-sm-12 col-xs-12">
+			<div id="formElement2" class="elq-field-style form-element-layout row">
+			  <div style="text-align: left" class="col-sm-12 col-xs-12">
+				<label class="elq-label" for="fe7462">Nom
+				  <span class="elq-required">* </span>
+				</label>
+			  </div>
+			  <div class="col-sm-12 col-xs-12">
+				<div class="row">
+				  <div class="col-xs-12">
+					<div class="field-control-wrapper">
+					  <input type="text" class="elq-item-input" name="singleLineText" id="fe7462"
+						value="~~eloqua..type--emailfield..syntax--FRA_Nom1~~" style="width: 100%" required />
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="grid-layout-col">
+		  <div class="layout-col col-sm-12 col-xs-12">
+			<div id="formElement3" class="elq-field-style form-element-layout row">
+			  <div style="text-align: left" class="col-sm-12 col-xs-12">
+				<label class="elq-label" for="fe7463">E-Mail professionnel
+				  <span class="elq-required">* </span>
+				</label>
+			  </div>
+			  <div class="col-sm-12 col-xs-12">
+				<div class="row">
+				  <div class="col-xs-12">
+					<div class="field-control-wrapper">
+					  <input type="text" class="elq-item-input" name="emailAddress" id="fe7463"
+						value="~~eloqua..type--emailfield..syntax--adresse_Electronique1~~" style="width: 100%" required />
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+	  <div class="grid-layout-col">
+		<div class="layout-col col-sm-12 col-xs-12">
+		  <div id="formElement4" class="elq-field-style form-element-layout row">
+			<div style="text-align:left;" class="col-sm-12 col-xs-12">
+			  <label class="elq-label " for="fe7464">Téléphone professionnel
+				<span class="elq-required">*
+				</span>
+			  </label>
+			</div>
+			<div class="col-sm-12 col-xs-12">
+			  <div class="row">
+				<div class="col-xs-12">
+				  <div class="field-control-wrapper">
+					<input type="text" class="elq-item-input" name="singleLineText2" id="fe7464" value="~~eloqua..type--emailfield..syntax--FRA_TElEphone_professionnel1~~" style="width:100%;">
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	  <div class="row">
+		<div class="grid-layout-col">
+		  <div class="layout-col col-sm-12 col-xs-12">
+			<div id="formElement7" class="elq-field-style form-element-layout row">
+			  <div style="text-align: left" class="col-sm-12 col-xs-12">
+				<label class="elq-label" for="fe7467">Nom de l'entreprise <span class="elq-required">* </span></label>
+			  </div>
+			  <div class="col-sm-12 col-xs-12">
+				<div class="row">
+				  <div class="col-xs-12">
+					<div class="field-control-wrapper">
+					  <input type="text" class="elq-item-input" name="company" id="fe7467"
+						value="~~eloqua..type--emailfield..syntax--FRA_SociEtE11~~" style="width: 100%" required />
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="grid-layout-col">
+		<div class="layout-col col-sm-12 col-xs-12">
+		  <div id="formElement5" class="elq-field-style form-element-layout row">
+			<div style="text-align:left;" class="col-sm-12 col-xs-12">
+			  <label class="elq-label " for="fe7465">Code postal de l'entreprise<span class="elq-required">* </span></label>
+			</div>
+			<div class="col-sm-12 col-xs-12">
+			  <div class="row">
+				<div class="col-xs-12">
+				  <div class="field-control-wrapper">
+					<input type="text" class="elq-item-input" name="zipPostal" id="fe7465" value="~~eloqua..type--emailfield..syntax--FRA_Code_postal1~~" style="width:100%;" required>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+		<div class="row">
+	  <div class="grid-layout-col">
+		<div class="layout-col col-sm-12 col-xs-12">
+		  <div id="formElement12" class="elq-field-style form-element-layout row">
+			<div style="text-align:left;" class="col-sm-12 col-xs-12">
+			  <label class="elq-label " for="fe11699">Taille du parc<span class="elq-required">* </span>
+			  </label>
+			</div>
+			<div class="col-sm-12 col-xs-12">
+			  <div class="row">
+				<div class="col-xs-12">
+				  <div class="field-control-wrapper" id="fe11699">
+					<div class="list-order two-column">
+					  <input type="radio" id="radio-1_th5wgxtj" value="1" name="parc" required>
+					  <label class="checkbox-aligned elq-item-label" for="radio-1_th5wgxtj">Moins de 5 véhicules
+					  </label>
+					  <br>
+					</div>
+					<div class="list-order two-column">
+					  <input type="radio" id="radio-5_byxfsdx3" value="1" name="parc" required>
+					  <label class="checkbox-aligned elq-item-label" for="radio-5_byxfsdx3">5 véhicules et plus
+					  </label>
+					  <br>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	  <div class="row">
+		<div class="grid-layout-col">
+		  <div class="layout-col col-sm-12 col-xs-12">
+			<div id="formElement8" class="elq-field-style form-element-layout row">
+			  <div style="text-align: left" class="col-sm-12 col-xs-12">
+				<label class="elq-label" for="fe7468">J'accepte de recevoir des offres et services adaptés à mes
+				  besoins
+				  <span class="elq-required">*</span>
+				</label>
+			  </div>
+			  <div class="col-sm-12 col-xs-12">
+				<div class="row">
+				  <div class="col-xs-12">
+					<div class="field-control-wrapper" id="fe7468">
+					  <div class="list-order two-column">
+						<input type="radio" id="radio-Oui_xz4dzx2f" value="Oui" name="radioButtons2" required />
+						<label class="checkbox-aligned elq-item-label" for="radio-Oui_xz4dzx2f">Oui
+						</label>
+						<br />
+					  </div>
+					  <div class="list-order two-column">
+						<input type="radio" id="radio-Non_vqxx2p5mk" value="Non" name="radioButtons2" required/>
+						<label class="checkbox-aligned elq-item-label" for="radio-Non_vqxx2p5mk">Non
+						</label>
+						<br />
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="grid-layout-col">
+		  <div class="layout-col col-sm-12 col-xs-12">
+			<div id="formElement11" class="elq-field-style form-element-layout row">
+			  <div class="col-sm-12 col-xs-12">
+				<div class="row">
+				  <div class="col-xs-12">
+					<div>
+					  <center>
+						<input type="Submit" class="button" value="JE VALIDE MA DEMANDE" id="fe7237" />
+					  </center>
+					  <p class="previous-step" style="text-align: center; font-size: 16px">
+						Revenir à l'étape précédente
+					  </p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="grid-layout-col">
+		  <div class="layout-col col-sm-12 col-xs-12">
+			<div id="formElement9" class="elq-field-style form-element-layout row">
+			  <div class="col-sm-12 col-xs-12">
+				<div class="row">
+				  <div class="col-xs-12">
+					<div class="ML">
+					  * Ces données personnelles sont nécessaires et
+					  obligatoires pour pouvoir traiter votre demande. Nous
+					  souhaitons recueillir votre accord pour le traitement de
+					  certaines de vos données personnelles afin de
+					  personnaliser nos échanges. Pour consulter le détail des
+					  traitements effectués par ALD Automotive et des
+					  finalités associées cliquez
+					  <a target="_blank" href="https://www.aldautomotive.fr/donnees-personnelles">ici.</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	 <input type="hidden" name="hiddenFiliale" id="fe7469" value="25001">
+	<input type="hidden" name="hiddenCampaign" id="fe7470" value="7013X000002OkXSQA0">
+	<input type="hidden" name="hiddenField2" id="fe7471" value="01220000000Cm7FAAS">
+	<input type="hidden" name="hiddenField" id="fe7472" value="">
+	<input type="hidden" name="hiddenField3" id="fe7473" value="~~eloqua..type--emailfield..syntax--FRA_SFDC_Account_owner_ID1~~">
+	<input type="hidden" name="hiddenField8" id="fe7487" value="~~eloqua..type--emailfield..syntax--FRA_ID_compte_SFDC1~~">
+	<input type="hidden" name="hiddenField7" id="fe7474" value="A traiter">
+	<input type="hidden" name="hiddenField4" id="fe7475" value="Simplissime Skoda 2023">
+	<input type="hidden" name="hiddenField5" id="fe7476" value="Website">
+	<input type="hidden" name="hiddenField6" id="fe7477" value="ALD">
+	<input type="hidden" name="Km_contrat" id="fe10163" value="">
+	<input type="hidden" name="Duree_contrat" id="fe10164" value="">
+	<input type="hidden" name="Loyer_majore" id="fe10165" value="">
+	<input type="hidden" name="modele" id="fe10166" value="">
+	<input type="hidden" name="Hidden_utm_campaign" id="fe10773" value="~~eloqua..type--emailfield..syntax--utm_campaign1~~">
+	<input type="hidden" name="hidden-utm-medium" id="fe10774" value="~~eloqua..type--emailfield..syntax--utm_medium1~~">
+	<input type="hidden" name="hidden-utm-source" id="fe10775" value="~~eloqua..type--emailfield..syntax--utm_source1~~">
+		<input type="hidden" name="Utm_content" id="fe11283" value="~~eloqua..type--emailfield..syntax--utm_content1~~">
+	  <input type="hidden" name="hidden-campagneID-email" id="fe10776" value="7013X000002OkXSQA0">
+	<input type="hidden" name="hidden-campagne-generique" id="fe10777" value="7013X000002OkXSQA0">
+	</div>
+  </form>
+<script type="text/javascript" src="https://img06.en25.com/i/livevalidation_standalone.compressed.js">
+</script>
+<script>
+function handleFormSubmit(ele) {
+	var submitButton = ele.querySelector('input[type=submit]');
+	var spinner = document.createElement('span');
+	spinner.setAttribute('class', 'loader');
+	submitButton.setAttribute('disabled', true);
+	submitButton.style.cursor = 'wait';
+	submitButton.parentNode.appendChild(spinner);
+	return true;
+  }
+  function resetSubmitButton(e){
+	var submitButtons = e.target.form.getElementsByClassName('submit-button');
+	for(var i=0;i<submitButtons.length;i++){
+	  submitButtons[i].disabled = false;
+	}
+  }
+  function addChangeHandler(elements){
+	for(var i=0; i<elements.length; i++){
+	  elements[i].addEventListener('change', resetSubmitButton);
+	}
+  }
+  var form = document.getElementById('form704');
+  addChangeHandler(form.getElementsByTagName('input'));
+  addChangeHandler(form.getElementsByTagName('select'));
+  addChangeHandler(form.getElementsByTagName('textarea'));
+  var nodes = document.querySelectorAll('#form704 input[data-subscription]');
+  if (nodes) {
+	for (var i = 0, len = nodes.length; i < len; i++) {
+	  var status = nodes[i].dataset ? nodes[i].dataset.subscription : nodes[i].getAttribute('data-subscription');
+	  if(status ==='true') {
+		nodes[i].checked = true;
+	  }
+	}
+  };
+  var nodes = document.querySelectorAll('#form704 select[data-value]');
+  if (nodes) {
+	for (var i = 0; i < nodes.length; i++) {
+	  var node = nodes[i];
+	  var selectedValue = node.dataset ? node.dataset.value : node.getAttribute('data-value');
+	  if (selectedValue) {
+		for (var j = 0; j < node.options.length; j++) {
+		  if(node.options[j].value === selectedValue) {
+			node.options[j].selected = 'selected';
+			break;
+		  }
+		}
+	  }
+	}
+  }
+  this.getParentElement = function(list) {
+	return list[list.length-1].parentElement};
+  var dom0 = document.querySelectorAll('#form704 [name="radioButtons"]');
+  var fe7460 = new LiveValidation(dom0, {
+	validMessage: "", onlyOnBlur: false, wait: 300, insertAfterWhatNode :this.getParentElement(dom0), isGroup: true}
+								  , true);
+  fe7460.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			);
+  fe7460.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			);
+  fe7460.add(Validate.Presence, {
+	failureMessage:"Ce champ est obligatoire"}
+			);
+  var dom1 = document.querySelector('#form704 #fe7461');
+  var fe7461 = new LiveValidation(dom1, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								 );
+  fe7461.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			);
+  fe7461.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			);
+  fe7461.add(Validate.Length, {
+	tooShortMessage:"Longueur invalide", tooLongMessage: "Longueur invalide",  minimum: 0, maximum: 35}
+			);
+  fe7461.add(Validate.Presence, {
+	failureMessage:"Ce champ est obligatoire"}
+			);
+  var dom2 = document.querySelector('#form704 #fe7462');
+  var fe7462 = new LiveValidation(dom2, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								 );
+  fe7462.add(Validate.Presence, {
+	failureMessage:"Ce champ est obligatoire"}
+			);
+  fe7462.add(Validate.Length, {
+	tooShortMessage:"Longueur invalide", tooLongMessage: "Longueur invalide",  minimum: 0, maximum: 35}
+			);
+  fe7462.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			);
+  fe7462.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			);
+  var dom3 = document.querySelector('#form704 #fe7463');
+  var fe7463 = new LiveValidation(dom3, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								 );
+  fe7463.add(Validate.Presence, {
+	failureMessage:"Ce champ est obligatoire"}
+			);
+  fe7463.add(Validate.Format, {
+	pattern: /(^[A-Z0-9!#\$%&'\*\+\-\/=\?\^_`\{\|\}~][A-Z0-9!#\$%&'\*\+\-\/=\?\^_`\{\|\}~\.]{0,62}@(([A-Z0-9](?:[A-Z0-9\-]{0,61}[A-Z0-9])?)(\.[A-Z0-9](?:[A-Z0-9\-]{0,61}[A-Z0-9])?)+)$)/i, failureMessage: "A valid email address is required"}
+			);
+  fe7463.add(Validate.Format, {
+	pattern: /\.\.|\.@/i, failureMessage: "Adresse e-mail invalide", negate: "true"}
+			);
+  var dom4 = document.querySelector('#form704 #fe7464');
+  var fe7464 = new LiveValidation(dom4, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								 );
+  fe7464.add(Validate.Presence, {
+	failureMessage:"Ce champ est obligatoire"}
+			);
+  fe7464.add(Validate.Length, {
+	tooShortMessage:"Ce format de téléphone n'est pas valide", tooLongMessage: "Ce format de téléphone n'est pas valide",  minimum: 10, maximum: 10}
+			);
+  fe7464.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			);
+  fe7464.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			);
+  var dom5 = document.querySelector('#form704 #fe7465');
+  var fe7465 = new LiveValidation(dom5, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								 );
+  fe7465.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			);
+  fe7465.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			);
+  fe7465.add(Validate.Length, {
+	tooShortMessage:"Longueur invalide", tooLongMessage: "Longueur invalide",  minimum: 0, maximum: 5}
+			);
+  var dom6 = document.querySelector('#form704 #fe7466');
+  var fe7466 = new LiveValidation(dom6, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								 );
+  fe7466.add(Validate.Length, {
+	tooShortMessage:"Longueur invalide", tooLongMessage: "Longueur invalide",  minimum: 0, maximum: 35}
+			);
+  fe7466.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			);
+  fe7466.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			);
+  var dom7 = document.querySelector('#form704 #fe7467');
+  var fe7467 = new LiveValidation(dom7, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								 );
+  fe7467.add(Validate.Length, {
+	tooShortMessage:"Longueur invalide", tooLongMessage: "Longueur invalide",  minimum: 0, maximum: 35}
+			);
+  fe7467.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			);
+  fe7467.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			);
+  var dom8 = document.querySelector('#form704 #fe10931');
+  var fe10931 = new LiveValidation(dom8, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								  );
+  fe10931.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			 );
+  fe10931.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			 );
+  var dom9 = document.querySelector('#form704 #fe11149');
+  var fe11149 = new LiveValidation(dom9, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								  );
+  fe11149.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			 );
+  fe11149.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			 );
+  var dom10 = document.querySelector('#form704 #fe11151');
+  var fe11151 = new LiveValidation(dom10, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								  );
+  var dom11 = document.querySelector('#form704 #fe10262');
+  var fe10262 = new LiveValidation(dom11, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								  );
+  fe10262.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			 );
+  fe10262.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			 );
+  var dom12 = document.querySelectorAll('#form704 [name="parc"]');
+  var fe11699 = new LiveValidation(dom12, {
+	validMessage: "", onlyOnBlur: false, wait: 300, insertAfterWhatNode :this.getParentElement(dom12), isGroup: true}
+								   , true);
+  fe11699.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			 );
+  fe11699.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			 );
+  var dom13 = document.querySelector('#form704 #fe11233');
+  var fe11233 = new LiveValidation(dom13, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								  );
+  var dom14 = document.querySelector('#form704 #fe9359');
+  var fe9359 = new LiveValidation(dom14, {
+	validMessage: "", onlyOnBlur: false, wait: 300}
+								 );
+  var dom15 = document.querySelectorAll('#form704 [name="radioButtons2"]');
+  var fe7468 = new LiveValidation(dom15, {
+	validMessage: "", onlyOnBlur: false, wait: 300, insertAfterWhatNode :this.getParentElement(dom15), isGroup: true}
+								  , true);
+  fe7468.add(Validate.Presence, {
+	failureMessage:"Ce champ est obligatoire"}
+			);
+  fe7468.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(<([^>]+)>)/ig);
+	}
+	, failureMessage: "Ne doit pas contenir d'HTML"}
+			);
+  fe7468.add(Validate.Custom, {
+	against: function(value) {
+	  return !value.match(/(telnet|ftp|https?):\/\/(?:[a-z0-9][a-z0-9-]{0,61}[a-z0-9]\.|[a-z0-9]\.)+[a-z]{2,63}/i);
+	}
+	, failureMessage: "Ne doit pas contenir d'URL"}
+			);
+</script>
+
+<script>
+$(document).ready(function(){
+	// standard on load code goes here with $ prefix
+	// note: the $ is setup inside the anonymous function of the ready command
+	
+	/* -------------------------------------------- */
+	/* ------------- GLOBAL VARIABLES ------------- */
+	/* -------------------------------------------- */
+	
+	/* jQuery instances */
+	
+	var $priceHtml = $('.cars-price');
+	
+	$(".range-km").append("<div class='disable-option'></div>");
+$(".range-duree").append("<div class='disable-option'></div>");
+$(".loyer-checked").css({"display":"none"});
+
+/* Change select toggle Range inputs */
+$(document).on("change", "#cars", function(e) {
+  if ($(this).children("option:first-child").is(":selected")) {
+    $(".range-km").find(".disable-option").css({"display":"block"});
+    $(".range-duree").find(".disable-option").css({"display":"block"});
+    $(".range-km, .range-duree").find(".disable-option").attr("title", "Sélectionnez un véhicule pour activer cette option");
+  } else {
+    $(".range-km").find(".disable-option").css({"display":"none"});
+    $(".range-duree").find(".disable-option").css({"display":"none"});
+    $(".range-km, .range-duree").find(".disable-option").attr("title", "");
+    if ($(this).children("option[value='BMW Série 1']").is(":selected")) {
+      $("label[for=checkboxLoyer]").text("Premier loyer majoré de 2 691€"); // BMW Série 1
+    } else if($(this).children("option[value='BMW iX1']").is(":selected")){
+      $("label[for=checkboxLoyer]").text("Premier loyer majoré de 5 059€"); // BMW iX1
+    } else if($(this).children("option[value='BMW X3']").is(":selected")){
+      $("label[for=checkboxLoyer]").text("Premier loyer majoré de 5 350€"); // BMW X3
+    } else if($(this).children("option[value='Autre']").is(":selected")){
+      $("label[for=checkboxLoyer]").text("Intéressé(e) par un premier loyer majoré ?"); // Autre
+    } else {
+      $("label[for=checkboxLoyer]").text("Premier loyer majoré default"); // Default
+    }
+  }
+});
+
+/* Show/hide Loyer input */
+$(".loyer-checkbox").on("change", function(e) {
+  if ($(this).is(":checked")) {
+    $(".loyer-checked").css({"display":"block"});
+  } else {
+    $(".loyer-checked").css({"display":"none"});
+  }
+});
+
+/* Partie 2 */
+$(".range-km input, .range-duree input").hover(function() {
+  // Vérifier si la partie 1 a été sélectionnée
+  if ($("#cars").children("option:first-child").is(":selected")) {
+    // Afficher le message d'erreur
+    $(this).attr("title", "Sélectionnez un véhicule pour activer cette option");
+  } else {
+    // Masquer le message d'erreur
+    $(this).attr("title", "");
+  }
+});
+
+	/* Otowui.com Add #1 END */
+	
+	/* Cars variables */
+	var cars = {
+		// Object key model => CarModel_Duration_Kilometers_Loan
+		/* - Modifier le prix ici - */
+	  // ModeleA
+'Skoda Fabia_3 ans_10000 km_loyerOff': 247,
+'Skoda Fabia_3 ans_15000 km_loyerOff': 256,
+'Skoda Fabia_3 ans_20000 km_loyerOff': 263,
+'Skoda Fabia_3 ans_25000 km_loyerOff': 271,
+'Skoda Fabia_4 ans_10000 km_loyerOff': 231,
+'Skoda Fabia_4 ans_15000 km_loyerOff': 238,
+'Skoda Fabia_4 ans_20000 km_loyerOff': 246,
+'Skoda Fabia_4 ans_25000 km_loyerOff': 275,
+'Skoda Fabia_5 ans_10000 km_loyerOff': 234,
+'Skoda Fabia_5 ans_15000 km_loyerOff': 242,
+'Skoda Fabia_5 ans_20000 km_loyerOff': 254,
+'Skoda Fabia_5 ans_25000 km_loyerOff': 279,
+
+
+
+
+  // ModeleB
+'Skoda Kamiq_3 ans_10000 km_loyerOff': 284,
+'Skoda Kamiq_3 ans_15000 km_loyerOff': 303,
+'Skoda Kamiq_3 ans_20000 km_loyerOff': 323,
+'Skoda Kamiq_3 ans_25000 km_loyerOff': 342,
+'Skoda Kamiq_4 ans_10000 km_loyerOff': 279,
+'Skoda Kamiq_4 ans_15000 km_loyerOff': 298,
+'Skoda Kamiq_4 ans_20000 km_loyerOff': 318,
+'Skoda Kamiq_4 ans_25000 km_loyerOff': 351,
+'Skoda Kamiq_5 ans_10000 km_loyerOff': 291,
+'Skoda Kamiq_5 ans_15000 km_loyerOff': 313,
+'Skoda Kamiq_5 ans_20000 km_loyerOff': 330,
+'Skoda Kamiq_5 ans_25000 km_loyerOff': 365,
+
+
+
+  // ModeleC
+'Skoda Enyaq_3 ans_10000 km_loyerOff': 490,
+'Skoda Enyaq_3 ans_15000 km_loyerOff': 521,
+'Skoda Enyaq_3 ans_20000 km_loyerOff': 565,
+'Skoda Enyaq_3 ans_25000 km_loyerOff': 595,
+'Skoda Enyaq_4 ans_10000 km_loyerOff': 483,
+'Skoda Enyaq_4 ans_15000 km_loyerOff': 513,
+'Skoda Enyaq_4 ans_20000 km_loyerOff': 545,
+'Skoda Enyaq_4 ans_25000 km_loyerOff': 584,
+'Skoda Enyaq_5 ans_10000 km_loyerOff': 475,
+'Skoda Enyaq_5 ans_15000 km_loyerOff': 508,
+'Skoda Enyaq_5 ans_20000 km_loyerOff': 541,
+'Skoda Enyaq_5 ans_25000 km_loyerOff': 587,
+
+  
+    // ModeleD
+'Autre_3 ans_10000 km_loyerOff': 1,
+'Autre_3 ans_15000 km_loyerOff': 2,
+'Autre_3 ans_20000 km_loyerOff': 3,
+'Autre_3 ans_25000 km_loyerOff': 4,
+'Autre_4 ans_10000 km_loyerOff': 5,
+'Autre_4 ans_15000 km_loyerOff': 6,
+'Autre_4 ans_20000 km_loyerOff': 7,
+'Autre_4 ans_25000 km_loyerOff': 8,
+'Autre_5 ans_10000 km_loyerOff': 9,
+'Autre_5 ans_15000 km_loyerOff': 10,
+'Autre_5 ans_20000 km_loyerOff': 11,
+'Autre_5 ans_25000 km_loyerOff': 12,
+
+
+
+};
+
+	/* Misc */
+	var defaultPrice = "-";
+	
+	/* - Fin de modification du prix - */
+	var currency = '€';
+	
+	/* -------------------------------------------- */
+	/* ---------------- HELPERS ------------------- */
+	/* -------------------------------------------- */
+	
+	// Format price to string
+	function formatPriceString(price) {
+  		return price + ' ' + currency;
+	}
+
+/* -------------------------------------------- */
+/* ----------- DOCUMENT LIFECYCLE ------------- */
+/* -------------------------------------------- */
+
+// Document is ready
+$(document).ready(function () {
+  $priceHtml.html(formatPriceString(defaultPrice));
+});
+
+// Document has loaded
+$(window).on('load', function () {
+  function initializeJauges() {
+	$('.jauge').each(function () {
+	  var $this = $(this);
+
+	  var firstDot = $this.find('.line-option_selector')[0];
+	  var distanceLeft = $(firstDot).offset().left - $this.offset().left;
+
+	  $(this).find('.line-active').css('padding-left', distanceLeft);
+	});
+  }
+
+  initializeJauges();
+});
+
+/* -------------------------------------------- */
+/* --------------- LISTENERS ------------------ */
+/* -------------------------------------------- */
+
+/* Main listener */
+
+function onCarFieldChange() {
+  // Car model value
+  var $carModel = $('#cars').val();
+  // Kilometers value
+  var $kilometers = $('.range-km .line-option_selector.option-active').attr(
+	'value'
+  );
+  // Duration value
+  var $duration = $('.range-duree .line-option_selector.option-active').attr(
+	'value'
+  );
+
+  // Checkbox value
+  var $loan = $('#checkboxLoyer').is(':checked') ? 'loyerOn' : 'loyerOff';
+
+  // Get unique key by separating each value with a '_'
+  var key = [$carModel, $duration, $kilometers, $loan].join('_');
+
+  // Map this value to cars variable, if not found use defaultPrice
+  var startingPrice = cars[key] || defaultPrice;
+
+  // Write startingPrice in html
+  $priceHtml.html(formatPriceString(startingPrice));
+}
+
+/* Jauge listener */
+
+var kmActive = 0;
+var durationActive = 0;
+
+function onJaugeChange(index, container, active) {
+  var $container = container;
+  var $lineContainer = $($container.find('.line-active'));
+  var $line = $($container.find('.line-active_line'));
+
+  var $dot = $(
+	$($container.find('.line-option')[index - 1]).find('.line-option_selector')
+  );
+
+  // Left margin to horizontally align active dot
+  var leftSpacing =
+	parseInt($container.find('.line-active').css('padding-left'), 10) - 1;
+
+  // If jauge is going forward
+  if (index > active) {
+	for (let i = active; i < index; i++) {
+	  setTimeout(
+		function () {
+		  $($container.find('.line-option')[i])
+			.find('.line-option_selector')
+			.addClass('option-completed');
+		},
+		// We need an exception when we animate the first dot so that's updated instantly to avoid any flicker
+		i === active ? 0 : 400 / (index - i)
+	  );
+	}
+  } else {
+	// If jauge is going backward
+	for (let i = active; i > index - 1; i--) {
+	  setTimeout(function () {
+		$($container.find('.line-option')[i])
+		  .find('.line-option_selector')
+		  .removeClass('option-completed');
+	  }, i === index - 1 ? 4000 : 400 / (index + i));
+	}
+  }
+
+  $lineContainer.css('display', 'flex');
+
+  $line.animate({
+	duration: 400,
+	easing: 'easeout',
+	width: $dot.position().left - leftSpacing,
+  });
+
+  return index;
+}
+
+// Window resize
+$(window).resize(function () {
+  // Function used when window is resized - to calculate jauge style values
+  function calculateJauge(container, active) {
+	var $container = container;
+	var $line = $($container.find('.line-active_line'));
+
+	var $dot = $(
+	  $($container.find('.line-option')[active - 1]).find(
+		'.line-option_selector'
+	  )
+	);
+
+	var leftSpacing =
+	  parseInt($container.find('.line-active').css('padding-left'), 10) - 1;
+
+	$line.css('width', $dot.position().left - leftSpacing);
+  }
+
+  // KMs
+  calculateJauge($('.range-km'), kmActive);
+  // Duration
+  calculateJauge($('.range-duree'), durationActive);
+});
+
+/* On car model change */
+
+$('.cars-select').on('change', function () {
+  if ($(this).val() == 'Skoda Fabia') {
+	$('.modeleA').css('display', 'flex');
+	$('.modeleB').css('display', 'none');
+	$('.modeleC').css('display', 'none');
+	$('.modeleD').css('display', 'none');
+  
+  } else if ($(this).val() == 'Skoda Kamiq') {
+	$('.modeleA').css('display', 'none');
+	$('.modeleB').css('display', 'flex');
+	$('.modeleC').css('display', 'none');
+	$('.modeleD').css('display', 'none');
+
+  } else if ($(this).val() == 'Skoda Enyaq') {
+	$('.modeleA').css('display', 'none');
+	$('.modeleB').css('display', 'none');
+	$('.modeleC').css('display', 'flex');
+	$('.modeleD').css('display', 'none');
+   
+	} else if ($(this).val() == 'Autre') {
+	$('.modeleA').css('display', 'none');
+	$('.modeleB').css('display', 'none');
+	$('.modeleC').css('display', 'none');
+	$('.modeleD').css('display', 'flex');
+  }  
+
+  // Trigger listener
+  onCarFieldChange();
+});
+
+/* On kms change */
+
+$('.range-km').on('click', '.line-option', function () {
+  var $selector = $($(this)).find('.line-option_selector');
+  var $previousActive = $('.range-km .line-option_selector.option-active');
+  var index = $(this).index();
+
+  // Remove previous
+  $previousActive.removeClass('option-active');
+  $($previousActive.siblings('.label-active')).removeClass('label-active');
+  $($previousActive.siblings('.line-option_label')).removeClass('hide');
+
+  // Add pressed state to new one
+  $selector.addClass('option-active');
+  $($selector.siblings('.line-option_sublabel')).addClass('label-active');
+  $($selector.siblings('.line-option_label')).addClass('hide');
+
+  // Trigger listener
+  onCarFieldChange();
+
+  // Jauge functions
+  var newIndex = onJaugeChange(index, $('.range-km'), kmActive);
+  kmActive = newIndex;
+});
+
+/* On duration change */
+
+$('.range-duree').on('click', '.line-option', function () {
+  var $selector = $($(this)).find('.line-option_selector');
+  var $previousActive = $('.range-duree .line-option_selector.option-active');
+  var index = $(this).index();
+
+  // Remove previous
+  $previousActive.removeClass('option-active');
+  $($previousActive.siblings('.label-active')).removeClass('label-active');
+  $($previousActive.siblings('.line-option_label')).removeClass('hide');
+
+  // Add pressed state to new one
+  $selector.addClass('option-active');
+  $($selector.siblings('.line-option_sublabel')).addClass('label-active');
+  $($selector.siblings('.line-option_label')).addClass('hide');
+
+  // Trigger listener
+  onCarFieldChange();
+
+  // Jauge functions
+  var newIndex = onJaugeChange(index, $('.range-duree'), durationActive);
+  durationActive = newIndex;
+});
+
+/* On checkbox change */
+
+$('#checkboxLoyer').on('change', onCarFieldChange);
+
+/* On quote button click */
+var $alreadyAppendKm = false;
+var $alreadyAppendDuree = false;
+
+$('.quote-button').click(function (e) {
+  var $error =
+	'<span class="wrapper-error"> - Merci de renseigner ce champ </span>';
+
+  if (!$('.range-km .line-option_selector').hasClass('option-active')) {
+	if ($alreadyAppendKm == false) {
+	  $('.range-km h4').append($error);
+	  $alreadyAppendKm = true;
+	}
+	var $counterError = 1;
+  } else {
+	var $kmVal = $('.range-km .line-option_selector.option-active').attr(
+	  'value'
+	);
+	$('#fe10163').val($kmVal);
+  }
+
+  if (!$('.range-duree .line-option_selector').hasClass('option-active')) {
+	if ($alreadyAppendDuree == false) {
+	  $('.range-duree h4').append($error);
+	  $alreadyAppendDuree = true;
+	}
+	var $counterError = 1;
+  } else {
+	var $dureeVal = $('.range-duree .line-option_selector.option-active').attr(
+	  'value'
+	);
+	$('#fe10164').val($dureeVal);
+  }
+
+  var $carsModele = $('.cars-select').val();
+  $('#fe10166').val($carsModele);
+
+  if ($('#checkboxLoyer').is(':checked')) {
+	var $loyer = 'Oui';
+	$('#fe10165').val($loyer);
+  } else {
+	var $loyer = 'Non';
+	$('#fe10165').val($loyer);
+  }
+
+  console.log($loyer);
+  console.log($dureeVal);
+  console.log($kmVal);
+  console.log($carsModele);
+  // Display form 2
+  if ($counterError !== 1) {
+	$('.form-step1').toggle();
+	$('.elq-form').toggle();
+  }
+});
+
+/* On previous button click */
+
+$('.previous-step').click(function () {
+  $('.form-step1').toggle();
+  $('.elq-form').toggle();
+});
+
+  
+  });
+</script>
